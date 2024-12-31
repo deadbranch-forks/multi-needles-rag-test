@@ -6,6 +6,8 @@ This repository contains the files and instructions for an ad-hoc test designed 
 
 The **Multi-Needles Test** is inspired by [Georgi Gerganov's multi-needles test](https://github.com/ggerganov/llama.cpp/pull/4815#issuecomment-1883289977). It embeds challenging queries (needles) into a long document and assesses how well systems can retrieve them. This test uses an iterative prompt, as the original prompt from ggerganov often fails with current RAG implementations.
 
+There is an accompanying reddit [post](https://www.reddit.com/r/LocalLLaMA/comments/1hq36dn/practical_online_offline_rag_setups_for_long/) explaining why this repository exists and the results so far.
+
 ### Test Features
 1. **Multi-format Documents**: The test includes `.md`, `.pdf`, and `.docx` formats to ensure cross-compatibility.
 2. **Iterative Prompt**: A modified version of the original prompt improves retrieval reliability.
