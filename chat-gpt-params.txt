@@ -1,0 +1,7 @@
+ln 2643
+chars: 133378
+
+Tokens
+28,691
+Characters
+131036
