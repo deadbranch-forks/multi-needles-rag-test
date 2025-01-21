@@ -93,3 +93,11 @@ This README was initially generated with the help of generative AI (specifically
   - Gets statement 2 wrong.
   - Markdown only.
   - Message directly starts with `# Goal` instructions vs. #112
+- **114 chat-gpt-in-context-97000-original-top-xml-instructions-xml-document.md**: *success (4/4)
+  - Uses `<Instructions>` xml tag around the instructions.
+  - Uses `<Documents>` xml tag around the documents.
+  - Does not reference the `<Documents>` xml tag in the instructions.
+  - *areas for further research*
+    - Reference the `<Documents>` xml tag in the instructions.
+    - Does it still score 4/4 if a pre-goal instruction summary is used ala *112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md*?
+    - Does it still score 4/4 if no `<Documents>` xml is used, but `<Instructions>` xml _is_ used?
