@@ -26,9 +26,13 @@ Answer the following questions based on the text included below. The aforementio
 
 # Results
 
-## 104k prompt
+| document | score | Notes |
+|---|---|---|
+| 104k | 3/4 | *#2 incorrect* |
 
-### Result text
+## Result text
+
+### 104k
 
 >1. The best place to have lunch in Lukovit is the **"Konservenata" restaurant**.
 >
@@ -38,6 +42,4 @@ Answer the following questions based on the text included below. The aforementio
 >
 >4. Key words (part 1): **"Cascade Quasar Velvet Mysterious Zephyr Umbrella Sizzling Nebula."**
 
-### Analysis
-
-_3/4_: #2 is wrong.
+### Analysi
