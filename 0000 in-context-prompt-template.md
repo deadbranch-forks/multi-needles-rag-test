@@ -1,5 +1,14 @@
-PROMPT:
+# Characteristics
 
+| what | value |
+|---|---|
+| *Pre-goal summary* | - |
+| *`<Instructions`> xml tags* | - |
+| Instructions reference `<Documents>`? | - |
+| *`<Document>` xml tags* | - |
+
+# Prompt Template
+```md
 # Goal
 
 Answer the following questions based on the text included below. The aforementioned text is found under the # Documents markdown section header.
@@ -13,6 +22,35 @@ Answer the following questions based on the text included below. The aforementio
 # Documents
 
 {document}
+```
+
+# Results
+
+## 104k prompt
+
+### Result text
+
+
+### Analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROMPT:
+
 
 
 RESULT:
