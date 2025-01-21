@@ -77,3 +77,12 @@ The needles were created by Georgi Gerganov, and hence belong to him.
 This repository was created by Stephen Karl Larroque, with the mere purpose of easing the reproducibility of this test.
 
 This README was initially generated with the help of generative AI (specifically ChatGPT-4o in December 2024).
+
+# Tests
+
+**112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md**: *failure*
+- Succeeds in 3/4 statements.
+- Markdown only
+  Documents are no longer surrounded by `<Documents>` xml tags.
+- Instruction summary prefix
+  The `# Goal` section is prefixed with a brief description of the task.
