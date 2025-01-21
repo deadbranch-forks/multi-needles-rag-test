@@ -80,19 +80,37 @@ This README was initially generated with the help of generative AI (specifically
 
 # Tests
 
-- **111 chat-gpt-in-context-104k-original-top-xml.md**: *failure (3/4)*
-  - Misses statement #2
-  - Uses XML tags around the document and refers to the document xml in the instructions.
-- **112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md**: *failure (3/4)* 
-  - Gets statement #2 wrong
-  - Markdown only
-    Documents are no longer surrounded by `<Documents>` xml tags.
-  - Instruction summary prefix
-    The `# Goal` section is prefixed with a brief description of the task.
-- **113 chat-gpt-in-context-104k-original-top.md**: *failure (3/4)*
-  - Gets statement 2 wrong.
-  - Markdown only.
-  - Message directly starts with `# Goal` instructions vs. #112
+- **100 in-context-document-no_pregoal-no_insxml-Ins_refs_Docs_xml-Docs_xml.md**
+  | what | value |
+  |---|---|
+  | *Pre-goal summary* | no |
+  | *`<Instructions`> xml tags* | no |
+  | Instructions reference `<Documents>`? | **yes** |
+  | *`<Document>` xml tags* | **yes**
+  - Result for **104k token** document: *failure (3/4)*
+      - Misses statement #2
+  - Result for **78k token** document:
+- **8000 in-context-prompt-template.md**
+  | what | value |
+  |---|---|
+  | *Pre-goal summary* | **yes** |
+  | *`<Instructions`> xml tags* | no |
+  | Instructions reference `<Documents>`? | no |
+  | *`<Document>` xml tags* | no |
+  - Result for **104k token** document: *failure (3/4)*
+    - Gets statement #2 wrong
+- **0000 in-context-prompt-template.md**: 
+  | what | value |
+  |---|---|
+  | *Pre-goal summary* | - |
+  | *`<Instructions`> xml tags* | - |
+  | Instructions reference `<Documents>`? | - |
+  | *`<Document>` xml tags* | - |
+  - **Results**
+    | document | score |
+    |---|---|
+    | 104k | 3/4 |
+    - Notes: Gets statement 2 wrong.
 - **114 chat-gpt-in-context-97000-original-top-xml-instructions-xml-document.md**: *success (4/4)
   - Uses `<Instructions>` xml tag around the instructions.
   - Uses `<Documents>` xml tag around the documents.
@@ -101,3 +119,4 @@ This README was initially generated with the help of generative AI (specifically
     - Reference the `<Documents>` xml tag in the instructions.
     - Does it still score 4/4 if a pre-goal instruction summary is used ala *112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md*?
     - Does it still score 4/4 if no `<Documents>` xml is used, but `<Instructions>` xml _is_ used?
+    - Does it still score 4/4 when using the 104k prompt?
