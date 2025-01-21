@@ -80,13 +80,16 @@ This README was initially generated with the help of generative AI (specifically
 
 # Tests
 
-- **112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md**: *failure (3/4)* 
+- **111 chat-gpt-in-context-104k-original-top-xml.md**: *failure (3/4)*
   - Misses statement #2
+  - Uses XML tags around the document and refers to the document xml in the instructions.
+- **112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md**: *failure (3/4)* 
+  - Gets statement #2 wrong
   - Markdown only
     Documents are no longer surrounded by `<Documents>` xml tags.
   - Instruction summary prefix
     The `# Goal` section is prefixed with a brief description of the task.
 - **113 chat-gpt-in-context-104k-original-top.md**: *failure (3/4)*
-  - Misses statement #2
+  - Gets statement 2 wrong.
   - Markdown only.
   - Message directly starts with `# Goal` instructions vs. #112
