@@ -80,43 +80,72 @@ This README was initially generated with the help of generative AI (specifically
 
 # Tests
 
-- **100 in-context-document-no_pregoal-no_insxml-Ins_refs_Docs_xml-Docs_xml.md**
-  | what | value |
-  |---|---|
-  | *Pre-goal summary* | no |
-  | *`<Instructions`> xml tags* | no |
-  | Instructions reference `<Documents>`? | **yes** |
-  | *`<Document>` xml tags* | **yes**
-  - Result for **104k token** document: *failure (3/4)*
-      - Misses statement #2
-  - Result for **78k token** document:
-- **8000 in-context-prompt-template.md**
-  | what | value |
-  |---|---|
-  | *Pre-goal summary* | **yes** |
-  | *`<Instructions`> xml tags* | no |
-  | Instructions reference `<Documents>`? | no |
-  | *`<Document>` xml tags* | no |
-  - Result for **104k token** document: *failure (3/4)*
-    - Gets statement #2 wrong
-- **0000 in-context-prompt-template.md**: 
-  | what | value |
-  |---|---|
-  | *Pre-goal summary* | - |
-  | *`<Instructions`> xml tags* | - |
-  | Instructions reference `<Documents>`? | - |
-  | *`<Document>` xml tags* | - |
-  - **Results**
-    | document | score |
-    |---|---|
-    | 104k | 3/4 |
-    - Notes: Gets statement 2 wrong.
-- **114 chat-gpt-in-context-97000-original-top-xml-instructions-xml-document.md**: *success (4/4)
-  - Uses `<Instructions>` xml tag around the instructions.
-  - Uses `<Documents>` xml tag around the documents.
-  - Does not reference the `<Documents>` xml tag in the instructions.
-  - *areas for further research*
-    - Reference the `<Documents>` xml tag in the instructions.
-    - Does it still score 4/4 if a pre-goal instruction summary is used ala *112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md*?
-    - Does it still score 4/4 if no `<Documents>` xml is used, but `<Instructions>` xml _is_ used?
-    - Does it still score 4/4 when using the 104k prompt?
+### 03 in-context-prompt-template.md
+![Rename to 03]
+
+**Method**
+| what | value |
+|---|---|
+| *Pre-goal summary* | no |
+| *`<Instructions`> xml tags* | no |
+| Instructions reference `<Documents>`? | **yes** |
+| *`<Document>` xml tags* | **yes**
+
+**Results**
+| document | score | Notes |
+|---|---|---|
+| 104k | 3/4 | *#2 incorrect* |
+| 78k | /4 | ** 
+  
+### 08 in-context-prompt-template.md
+
+**Method**
+| what | value |
+|---|---|
+| *Pre-goal summary* | **yes** |
+| *`<Instructions`> xml tags* | no |
+| Instructions reference `<Documents>`? | no |
+| *`<Document>` xml tags* | no |
+
+**Results**
+| document | score | Notes |
+|---|---|---|
+| 104k | 3/4 | *#2 incorrect* |
+| 78k | /4 | ** | 
+  
+### 00 in-context-prompt-template.md
+
+**Method**
+| what | value |
+|---|---|
+| *Pre-goal summary* | - |
+| *`<Instructions`> xml tags* | - |
+| Instructions reference `<Documents>`? | - |
+| *`<Document>` xml tags* | - |
+
+**Results**
+| document | score | Notes |
+|---|---|---|
+| 104k | 3/4 | *#2 incorrect* |
+
+### 05 in-context-prompt-template.md
+
+**Method**
+| what | value |
+|---|---|
+| *Pre-goal summary* | - |
+| *`<Instructions`> xml tags* | **yes** |
+| Instructions reference `<Documents>`? | - |
+| *`<Document>` xml tags* | **yes** |
+
+**Results**
+| document | score | Notes |
+|---|---|---|
+| 104k | /4  | |
+| 78k | 4/4 | *Success!!!*  | 
+
+#### *areas for further research*
+- Reference the `<Documents>` xml tag in the instructions.
+- Does it still score 4/4 if a pre-goal instruction summary is used ala *112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md*?
+- Does it still score 4/4 if no `<Documents>` xml is used, but `<Instructions>` xml _is_ used?
+- Does it still score 4/4 when using the 104k prompt?
