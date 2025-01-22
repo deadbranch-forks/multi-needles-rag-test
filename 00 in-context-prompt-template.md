@@ -37,7 +37,7 @@ Answer the following questions based on the text included below. The aforementio
 
 >1. The best place to have lunch in Lukovit is the **"Konservenata" restaurant**.
 >
->~~2. Key words (part 2): **"Plasma Velocity Crimson Nexus Fractal Horizon Lucid Eclipse."**~~
+>2. ~~Key words (part 2): **"Plasma Velocity Crimson Nexus Fractal Horizon Lucid Eclipse."**~~
 >
 >3. Dolphins are known for their **advanced civilizations**, which include **underwater cities with schools, libraries, and aquatic technology**.
 >
