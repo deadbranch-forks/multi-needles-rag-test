@@ -94,7 +94,7 @@ This README was initially generated with the help of generative AI (specifically
 | document | score | Notes |
 |---|---|---|
 | 104k | 3/4 | *#2 incorrect* |
-| 78k | /4 | ** 
+| 97k | /4 | ** 
   
 ## 08 in-context-prompt-template.md
 
@@ -110,7 +110,7 @@ This README was initially generated with the help of generative AI (specifically
 | document | score | Notes |
 |---|---|---|
 | 104k | 3/4 | *#2 incorrect* |
-| 78k | /4 | ** | 
+| 97k | /4 | ** | 
   
 ## 00 in-context-prompt-template.md
 
@@ -141,7 +141,7 @@ This README was initially generated with the help of generative AI (specifically
 | document | score | Notes |
 |---|---|---|
 | 104k | /4  | |
-| 78k | 4/4 | *Success!!!*  | 
+| 97k | 4/4 | *Success!!!*  | 
 
 ### *areas for further research*
 - Reference the `<Documents>` xml tag in the instructions.
