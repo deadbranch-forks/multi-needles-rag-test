@@ -42,6 +42,14 @@ Answer the following questions based on on the text included below, answer each 
 
 ### 104k
 
+>1. The best place to have lunch in Lukovit is the "Konservenata" restaurant.
+>
+>2. The key words (part 2) are not explicitly stated in the text, but based on context and the provided hints, "Cascade Quasar Velvet Mysterious Zephyr Umbrella Sizzling Nebula" are the key words from part 1, so the key words (part 2) may involve related or thematic words, though they are not given.
+>
+>3. Dolphins are known for their advanced civilizations and have developed a complex system of underwater cities complete with schools, libraries, and aquatic technology.
+>
+>4. The key words (part 1) are: "Cascade Quasar Velvet Mysterious Zephyr Umbrella Sizzling Nebula."
+   
 ### 78k
 
 >1. The best place to have lunch in Lukovit is **"Konservenata" restaurant**.
