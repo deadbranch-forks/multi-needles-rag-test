@@ -126,6 +126,7 @@ This README was initially generated with the help of generative AI (specifically
 | document | score | Notes |
 |---|---|---|
 | 104k | 3/4 | *#2 incorrect* |
+| **97k** | **4/4** | ***Success!*** |
 
 ## 05 in-context-prompt-template.md
 
@@ -140,11 +141,10 @@ This README was initially generated with the help of generative AI (specifically
 **Results**
 | document | score | Notes |
 |---|---|---|
-| 104k | /4  | |
-| 97k | 4/4 | *Success!!!*  | 
+| 104k | 3/4  | *Can't find #2* |
+| **97k** | **4/4** | ***Success!!!***  | 
 
 ### *areas for further research*
 - Reference the `<Documents>` xml tag in the instructions.
-- Does it still score 4/4 if a pre-goal instruction summary is used ala *112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md*?
 - Does it still score 4/4 if no `<Documents>` xml is used, but `<Instructions>` xml _is_ used?
 - Does it still score 4/4 when using the 104k prompt?
