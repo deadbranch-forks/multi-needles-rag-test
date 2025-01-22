@@ -81,7 +81,6 @@ This README was initially generated with the help of generative AI (specifically
 # Tests
 
 ## 03 in-context-prompt-template.md
-![Rename to 03]
 
 **Method**
 | what | value |
@@ -144,7 +143,7 @@ This README was initially generated with the help of generative AI (specifically
 | 104k | /4  | |
 | 78k | 4/4 | *Success!!!*  | 
 
-#### *areas for further research*
+### *areas for further research*
 - Reference the `<Documents>` xml tag in the instructions.
 - Does it still score 4/4 if a pre-goal instruction summary is used ala *112 chat-gpt-in-context-104k-original-top-with-prefix-summary.md*?
 - Does it still score 4/4 if no `<Documents>` xml is used, but `<Instructions>` xml _is_ used?
